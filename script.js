@@ -30,17 +30,21 @@ function campoMinato(cellaX, cellaY) {
     }
 }
 
-//provo a fare il bonus
 //recupero le informazioni del bottone e del select
 const bottonePlay = document.getElementById("bottone-play")
-const selettoreDifficoltà = document.getElementById('selettore-difficolta').options.length
-console.log(selettoreDifficoltà)
 
 //creo evento sul bottone play per generare il container
 bottonePlay.addEventListener ('click', function() {
     containerCampoMinato.innerHTML = ""
 
-    console.log(campoMinato(10, 10))
+    //a seconda dell'opzione selezionata, le caselle generate cambiano
+    if (document.getElementById('1').selected) {
+        campoMinato(10, 10)
+    } else if (document.getElementById('2').selected) {
+        campoMinato(9, 9)
+    } else if (document.getElementById('3').selected) {
+        campoMinato(7, 7)
+    }
 
 })
 
