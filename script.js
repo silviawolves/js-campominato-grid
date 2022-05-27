@@ -15,7 +15,6 @@ function campoMinato(cellaX, cellaY) {
         cella.classList.add('cella')
         containerCampoMinato.append(cella)
     }
-
 }
 
 console.log(campoMinato(10, 10))
