@@ -3,11 +3,17 @@
 //recupero elemento HTML in cui inserire le celle
 const containerCampoMinato = document.querySelector('.campo-minato')
 
-//creo una funzione per generare i numeri incrementali
+//creo una funzione per generare i numeri incrementali fino al massimo che stabilisco dopo
 function numeriIncrementali(max) {
-    
-}
+    const arrayNumeriIncrementali = []
 
+    for (let i = 1; i <= max; i++) {
+        arrayNumeriIncrementali.push(i)
+    }
+
+    return arrayNumeriIncrementali
+}
+console.log(numeriIncrementali(20))
 
 //creo una funzione generica per creare X celle in base al livello di difficolta
 //ora settata a 1 = 100 celle
