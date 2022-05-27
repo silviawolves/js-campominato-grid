@@ -23,6 +23,12 @@ function campoMinato(cellaX, cellaY) {
 
         //dentro ogni cella le stampo il suo indice, per ottenere i numeri incrementali (che sono l'i)
         cella.innerHTML = `<span>${i}</span>`
+
+        //aggiunto un eventListener per cambiare colore alla cella quando clicco
+        cella.addEventListener ('click', function(){
+
+
+        })
     }
 
 }

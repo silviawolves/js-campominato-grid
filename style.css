@@ -27,3 +27,8 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+.on-click {
+    background-color: var(--azzurro-cella);
+    color: white;
+}
