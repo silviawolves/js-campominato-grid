@@ -11,7 +11,7 @@ function campoMinato(cellaX, cellaY) {
     const celleRisultanti = cellaX * cellaY
 
     //assegno una dimensione che aggiusti la quantità di caselle per row
-    containerCampoMinato.style.width = `calc(50px * ${cellaX})`
+    containerCampoMinato.style.width = `calc(var(--size) * ${cellaX})`
 
     const arrayNumeri = []
 
