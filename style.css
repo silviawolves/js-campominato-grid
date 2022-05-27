@@ -15,6 +15,8 @@ header {
 main {
     flex-grow: 1;
     background-color: var(--azzurro);
+    display: flex;
+    align-items: center;
 }
 
 footer {
