@@ -13,8 +13,6 @@ function campoMinato(cellaX, cellaY) {
     //assegno una dimensione che aggiusti la quantità di caselle per row
     containerCampoMinato.style.width = `calc(var(--size) * ${cellaX})`
 
-    const arrayNumeri = []
-
     //creo un ciclo per formare ogni singola cella
     for (let i = 1; i <= celleRisultanti; i++) {
         const cella = document.createElement('div')
@@ -30,10 +28,21 @@ function campoMinato(cellaX, cellaY) {
             console.log("hai cliccato sul numero", this.innerText)
         })
     }
-
 }
 
-console.log(campoMinato(10, 10))
+//provo a fare il bonus
+//recupero le informazioni del bottone e del select
+const bottonePlay = document.getElementById("bottone-play")
+const selettoreDifficoltà = document.getElementById('selettore-difficolta').options.length
+console.log(selettoreDifficoltà)
+
+//creo evento sul bottone play per generare il container
+bottonePlay.addEventListener ('click', function() {
+    containerCampoMinato.innerHTML = ""
+
+    console.log(campoMinato(10, 10))
+
+})
 
 
 /*

@@ -14,14 +14,6 @@ select {
     width: 120px;
 }
 
-input[type=submit] {
-    height: 20px;
-    width: 70px;
-    line-height: 10px;
-    vertical-align: baseline;
-    margin-left: 5px;
-}
-
 main {
     flex-grow: 1;
     background-color: var(--azzurro);
@@ -56,6 +48,16 @@ footer {
 
 .destra {
     font-size: .8rem;
+}
+
+.my-button {
+    height: 20px;
+    width: 70px;
+    line-height: 10px;
+    vertical-align: baseline;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 .campo-minato {
