@@ -26,8 +26,8 @@ function campoMinato(cellaX, cellaY) {
 
         //aggiunto un eventListener per cambiare colore alla cella quando clicco
         cella.addEventListener ('click', function(){
-
-
+            this.classList.add('on-click')
+            console.log("hai cliccato sul numero", this.innerText)
         })
     }
 
